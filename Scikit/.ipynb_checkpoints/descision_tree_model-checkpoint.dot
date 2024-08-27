@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Income <= 2150.0\ngini = 0.78\nsamples = 20\nvalue = [2, 7, 3, 4, 3, 1]\nclass = car", fillcolor="#edfada"] ;
+1 [label="Age <= 12.0\ngini = 0.7\nsamples = 10\nvalue = [2, 0, 0, 4, 3, 1]\nclass = metro", fillcolor="#e3f1fb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Gender <= 0.5\ngini = 0.444\nsamples = 3\nvalue = [2, 0, 0, 0, 1, 0]\nclass = bicycle", fillcolor="#f2c09c"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0, 0, 0, 0, 0]\nclass = bicycle", fillcolor="#e58139"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1, 0]\nclass = scooter", fillcolor="#8139e5"] ;
+2 -> 4 ;
+5 [label="Age <= 19.0\ngini = 0.571\nsamples = 7\nvalue = [0, 0, 0, 4, 2, 1]\nclass = metro", fillcolor="#b0d8f5"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 3, 0, 0]\nclass = metro", fillcolor="#399de5"] ;
+5 -> 6 ;
+7 [label="Age <= 23.5\ngini = 0.625\nsamples = 4\nvalue = [0, 0, 0, 1, 2, 1]\nclass = scooter", fillcolor="#d5bdf6"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 2, 0]\nclass = scooter", fillcolor="#8139e5"] ;
+7 -> 8 ;
+9 [label="Income <= 1050.0\ngini = 0.5\nsamples = 2\nvalue = [0, 0, 0, 1, 0, 1]\nclass = metro", fillcolor="#ffffff"] ;
+7 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0, 0]\nclass = metro", fillcolor="#399de5"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1]\nclass = taxi", fillcolor="#e5399d"] ;
+9 -> 11 ;
+12 [label="Income <= 14500.0\ngini = 0.42\nsamples = 10\nvalue = [0, 7, 3, 0, 0, 0]\nclass = car", fillcolor="#c7f08e"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+13 [label="gini = 0.0\nsamples = 7\nvalue = [0, 7, 0, 0, 0, 0]\nclass = car", fillcolor="#9de539"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0, 0]\nclass = helicopter", fillcolor="#39e581"] ;
+12 -> 14 ;
+}
